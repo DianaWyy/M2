@@ -1,4 +1,5 @@
 package edu.gatech.oad.antlab.person;
+import java.util.ArrayList;
 
 import java.util.List;
 /**
@@ -39,7 +40,7 @@ public class Person2 {
         String output = "";
         while(chars.size()!=0){
             int randPicker = (int)(Math.random()*chars.size());
-            output += characters.remove(randPicker));
+            output += chars.remove(randPicker);
         }
 	  return output;
 	}
