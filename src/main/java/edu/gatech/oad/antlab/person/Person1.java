@@ -37,7 +37,7 @@ public class Person1 {
     private String calc(String input) {
         //Person 1 put your implementation here
         int length = input.length();
-        if (length < 2) {
+        if (length <= 2) {
             return input;
         }
 
