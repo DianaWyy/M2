@@ -1,0 +1,4 @@
+# ignore all .xml files
+*.xml
+.idea/
+*.DS_Store
