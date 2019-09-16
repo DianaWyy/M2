@@ -1,11 +1,12 @@
 package edu.gatech.oad.antlab.person;
 
+import java.util.List;
 /**
  *  A simple class for person 2
  *  returns their name and a
- *  modified string 
+ *  modified string
  *
- * @author Bob
+ * @author Anson
  * @version 1.1
  */
 public class Person2 {
@@ -17,7 +18,7 @@ public class Person2 {
 	 * @param pname the person's real name
 	 */
 	 public Person2(String pname) {
-	   name = pname;
+	   name = "Anson";
 	 }
 	/**
 	 * This method should take the string
@@ -31,14 +32,23 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+    List<Character> chars = new ArrayList<Character>();
+        for(char c:input.toCharArray()){
+            chars.add(c);
+        }
+        String output = "";
+        while(chars.size()!=0){
+            int randPicker = (int)(Math.random()*chars.size());
+            output += characters.remove(randPicker));
+        }
+	  return output;
 	}
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
 	 *
 	 * @param input the varying string
-	 * @return the string representing the 
+	 * @return the string representing the
 	 *         object
 	 */
 	public String toString(String input) {
